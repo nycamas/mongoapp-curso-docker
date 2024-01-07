@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  chanchito:
+  chancho:
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -15,8 +15,8 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=nico
-      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_ROOT_USERNAME=angel
+      - MONGO_INITDB_ROOT_PASSWORD=algjl
     volumes:
       - mongo-data:/data/db
       # mysql -> /var/lib/mysql
